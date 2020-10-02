@@ -4,10 +4,10 @@ const name = "Sangwon",
 age=24,
 gender ="male"
 
-const sayHi = (name, age, gender?) => {// ?가 붙으면 optional
-    console.log(`Hello ${name}, you are ${age}, you are a ${gender}`);
+const sayHi = (name:string, age:number, gender:string):string => {// ?가 붙으면 optional
+    return `Hello ${name}, you are ${age}, you are a ${gender}`;
 }
 
-sayHi(name, age);
+console.log(sayHi("sangwon", 23, "male"));
 
 export {}//버그 해결을 위해 넣어줌
